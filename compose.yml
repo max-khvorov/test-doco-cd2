@@ -1,0 +1,5 @@
+services:
+  app2:
+    container_name: busybox2
+    image: busybox
+    command: [/bin/sh, -c, while true; do echo $(date +%s); sleep 1; done']

@@ -3,9 +3,9 @@ services:
     container_name: busybox2
     image: busybox
     entrypoint: /bin/sh
-    command: -c "while true; do echo F2 $(date +%s); sleep 5; done"
+    command: -c "while true; do echo F2 $(date +%s); ls -la /test-data; sleep 5; done"
     volumes:
-        - data:/test-data/data2
+        - data:/test-data
 
 volumes:
   data:

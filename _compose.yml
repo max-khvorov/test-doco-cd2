@@ -1,6 +1,0 @@
-services:
-  app2:
-    container_name: busybox2
-    image: busybox
-    entrypoint: /bin/sh
-    command: -c "while true; do echo F2 $(date +%s); sleep 5; done"

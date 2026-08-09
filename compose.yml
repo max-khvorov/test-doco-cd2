@@ -1,5 +1,11 @@
 services:
-  app1:
+  app2:
+    container_name: busybox2
+    image: busybox
+    entrypoint: /bin/sh
+    command: -c "while true; do echo F2 $(date +%s); sleep 5; done"
     volumes:
-        - ./data2:/test-data/data2
-        #- ../test-doco-cd2/test_data:/test-data
+        - data:/test-data/data2
+
+volumes:
+  data:

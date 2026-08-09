@@ -5,8 +5,8 @@ environment:
   TESTER: BLA2
 compose_files:
   - compose.yml
-#---
-#name: test-deploy2
-#reference: main
-#compose_files:
-#  - compose.yml
+---
+name: test-deploy2
+reference: main
+compose_files:
+  - compose.yml

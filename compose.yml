@@ -1,0 +1,5 @@
+services:
+  app1:
+    volumes:
+        - ./data2:/test-data/data2
+        #- ../test-doco-cd2/test_data:/test-data

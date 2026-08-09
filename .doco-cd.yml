@@ -3,8 +3,8 @@ repository_url: https://github.com/max-khvorov/test-doco-cd.git
 reference: main
 compose_files:
   - compose.yml
----
-name: test-deploy2
-reference: main
-compose_files:
-  - compose.yml
+#---
+#name: test-deploy2
+#reference: main
+#compose_files:
+#  - compose.yml

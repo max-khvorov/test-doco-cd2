@@ -1,0 +1,4 @@
+name: test-deploy
+reference: main
+compose_files:
+  - compose.yml

@@ -3,3 +3,5 @@ services:
     container_name: busybox2
     image: busybox
     command: [/bin/sh, -c, while true; do echo $(date +%s); sleep 1; done']
+    entrypoint: ["/bin/sh", "-c"]
+    command: while true; do echo $(date +%s); sleep 1; done

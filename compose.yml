@@ -2,5 +2,6 @@ services:
   app2:
     container_name: busybox2
     image: busybox
-    entrypoint: ["/bin/sh", "-c"]
-    command: while true; do echo $(date +%s); sleep 1; done
+    entrypoint: /bin/sh
+    #command: while true; do echo $(date +%s); sleep 1; done
+    command: "-c 'while true; do echo FUCK2 sleep 1; done'"

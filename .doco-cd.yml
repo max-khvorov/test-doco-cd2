@@ -1,6 +1,10 @@
-name: test-deploy
+name: test-deploy1
 repository_url: https://github.com/max-khvorov/test-doco-cd.git
 reference: main
 compose_files:
-  - remote:compose.yml
+  - compose.yml
+---
+name: test-deploy2
+reference: main
+compose_files:
   - compose.yml

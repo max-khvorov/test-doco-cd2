@@ -6,7 +6,4 @@ services:
     command: -c "cp -R /td /test-data; while true; do echo F2 $(date +%s); ls -la /test-data; sleep 5; done"
     volumes:
         - ./data2:/td
-        - data:/test-data
-
-volumes:
-  data:
+        - ../test-doco-cd/data1:/test-data

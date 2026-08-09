@@ -1,6 +1,8 @@
 name: test-deploy1
 repository_url: https://github.com/max-khvorov/test-doco-cd.git
 reference: main
+environment:
+  TESTER: BLA2
 compose_files:
   - compose.yml
 #---
